@@ -62,11 +62,11 @@ body{
 
 .perfil2{
     border-radius: 50%;
-    padding: 15%;
+    padding: 10%;
 }
 
 .logo{
-    width: 20%;
+    width: 10%;
     border-radius: 10em;
 }
 
@@ -86,4 +86,20 @@ h3{
 
 p{
     font-weight: 500;
+}
+
+.coluna1{
+    position: relative;
+}
+
+.perfil_1{
+    position: absolute;
+    left: 39%;
+    top: 65%;
+}
+
+.perfil_2{
+    position: absolute;
+    left: 53%;
+    top: 65%;
 }
