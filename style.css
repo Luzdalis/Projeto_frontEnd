@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{ 
+    margin: 0%;
+}
+
+#top{
+    width: 100%;
+    height: 25rem;
+    background-image: url(img/imagem_top.jpg);
+    background-position: center 10%;
+    background-size: cover;    
+}
+
+#menu{
+    display: flex;
+    background-color: #002b33;
+    justify-content: center;
+}
+
+#menu div{
+    color: white;
+    font-size: 20px;
+    align-self: center;
+    padding: 1px;
+}
+
+#menu a:hover{
+    text-decoration:none;
+    background: rgb(74, 150, 87);
+    border-radius: 0.2em;   
+}
+
+#menu nav a{
+    display: inline-block;
+    color: white;
+    padding: 0.2em 1em;
+    text-decoration: none;
+}
+
+.perfil{
+    width: 20%;
+    border-radius: 10em;
+}
+
+.primeira{
+    display: flex;
+    width: 50%;
+}
+
+.perfil2{
+    border-radius: 50%;
+}
+
+.logo{
+    width: 20%;
+    border-radius: 10em;
+}
+
