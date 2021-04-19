@@ -245,3 +245,11 @@ h2{
 .texto_contato{
     font-size: 21px;
 }
+
+footer{
+    background-color: #0a1462;
+    text-align: center;
+    color: white;
+    margin-block: 0px;
+    padding: 1%;
+}
