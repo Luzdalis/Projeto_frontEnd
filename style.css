@@ -20,7 +20,7 @@ body{
 
 #menu{
     display: flex;
-    background-color: #002b33;
+    background-color: #0a1462;
     justify-content: center;
 }
 
@@ -65,7 +65,7 @@ h1{
     margin-block: 0px;
 }
 
-h2{
+.subtitulo{
     font-size: 34px;
     font-weight: 100;
 }
@@ -75,19 +75,21 @@ h3{
     font-weight: 700;
 }
 
-p{
+.texto{
     font-size: 21px;
     font-weight: 500;
+    margin-block: 0px;
+    padding-bottom: 10%;
 }
 
 .primeira{
     position: relative;
+    background-color: #0acd66;
 }
 
 .coluna2{
     padding-left: 41%;
     padding-right: 29%;
-    background-color: springgreen;
 }
 
 
@@ -105,8 +107,41 @@ p{
     top: 11%;
 }
 
-.perfil_2 {
+.perfil_2{
     position: absolute;
     left: 32%;
-    top: 11%;
+    top: 11% ;
+}
+
+h2{
+    font-size: 55px;
+    font-weight: lighter;
+    margin-block: 0px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.formaçao{
+    padding-left: 22%;
+    background-color: #3459ff;
+}
+
+.anos{
+    font-size: 13px; 
+    font-weight: 700;
+    margin-block: 0px;
+}
+
+.grado{
+    font-size: 21px;
+    font-weight: 900;
+    margin-block: 0px;
+}
+
+.univer{
+    font-size: 13px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-block: 0px;
+    padding-bottom: 6%;
 }
