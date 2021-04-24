@@ -4,7 +4,9 @@
 
 :root{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
 }
+
 
 body{ 
     margin: 0%;
@@ -26,7 +28,6 @@ body{
 
 #menu div{
     color: white;
-    font-size: 14px;
     align-self: center;
     padding: 1px;
     padding-left: 15%;
@@ -64,6 +65,7 @@ h1{
     font-size: 55px;
     height: 5%;
     margin-block: 0px;
+    margin-top: -6%;
 }
 
 .subtitulo{
@@ -80,11 +82,10 @@ h3{
     font-size: 21px;
     font-weight: 500;
     margin-block: 0px;
-    padding-bottom: 10%;
+    padding-bottom: 4%;
 }
 
 .primeira{
-    position: relative;
     background-color: #0acd66;
 }
 
@@ -93,34 +94,33 @@ h3{
     padding-right: 29%;
 }
 
-
 .perfil2 {
-    position: absolute;
     left: 22%;
     top: -14%;
     border-radius: 11em;
     width: 17%;
     border: inset;
+    margin-left: 22%;
+    margin-top: -7%;
 }
 
 .perfil_1{
-    position: absolute;
-    left: 27%;
-    top: 10%;
+    margin-left: -13%;
+    margin-right: 2%;  
+    margin-bottom: -1%;
 }
 
 .perfil_2{
-    position: absolute;
-    left: 32%;
-    top: 10% ;
+    margin-bottom: -1%;
 }
 
 h2{
     font-size: 55px;
     font-weight: lighter;
     margin-block: 0px;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-bottom: 3%;
+
 }
 
 .formaçao{
@@ -184,7 +184,6 @@ h2{
 
 .univer{
     text-transform: uppercase;
-    margin-bottom: 2%;
 }
 
 .nome_projeto{
