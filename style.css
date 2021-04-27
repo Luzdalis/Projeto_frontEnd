@@ -53,7 +53,8 @@ body{
 .perfil{
     width: 5%;
     border-radius: 10em;
-    padding: 1%;
+    margin: 5px;
+    border: 1px solid;
 }
 
 .logo{
@@ -90,17 +91,15 @@ h3{
 }
 
 .coluna2{
-    padding-left: 41%;
+    padding-left: 39%;
     padding-right: 29%;
 }
 
 .perfil2 {
-    left: 22%;
-    top: -14%;
     border-radius: 11em;
     width: 17%;
     border: inset;
-    margin-left: 22%;
+    margin-left: 19%;
     margin-top: -7%;
 }
 
@@ -162,6 +161,10 @@ h2{
     border: 3px double #006505;
     margin-left: 4%;
   }
+
+#botão_nav{
+    display: none;
+}
 
 .boton:hover{
     background-color: rgb(52, 52, 241);
@@ -268,3 +271,222 @@ p{
 .logos_baixos{
     margin-top: 18%;
 }
+
+.tempo_actividade{
+    margin: 3% 0%;
+}
+
+@media screen and (max-width: 1200px) {
+    .perfil2{
+        margin-left: 15%;
+    }
+    .coluna2 { 
+        padding-left: 34%;
+        padding-right: 18%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .perfil2{
+        margin-left: 11%;
+    }
+    .coluna2 { 
+        padding-left: 30%;
+        padding-right: 16%;
+    }
+    .contato {
+        padding: 0%;
+        justify-content: center;
+    }
+    #menu div {
+        padding-left: 8%;
+    }
+    .texto_contato{
+        font-size: 16px
+    }
+    .text {
+        width: 300px;
+        height: 20px;
+    }
+    .textarea {
+        width: 300px;
+        height: 80px;
+    }
+    .logos_baixos {
+        margin-top: 7%;
+    }
+    .center {
+        margin-bottom: 13%;
+    }
+}
+
+
+/* Adaptação para TABLET */ 
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    #botão_nav, #menu div{
+        display: block;
+    }
+    #botão_nav{
+        background-color: transparent;
+        width: 3rem;
+        height: 2.5rem;
+        border: .1rem solid rgba(0,0,0,.2);
+        border-radius: .4rem;
+    }
+    #botão_nav div {
+        background-color: white;
+        height: .3rem;
+        border-radius: .4rem;
+    }
+    #botão_nav div + div {
+        margin-top: .3rem;
+    }
+    #menu nav a{
+        display: none;
+    }
+    
+    .perfil{
+        width: 13%;
+    }
+    .perfil2{
+        margin-left: 11%;
+    }
+    .coluna2 { 
+        padding-left: 30%;
+        padding-right: 16%;
+    }
+    .contato {
+        padding: 0%;
+        justify-content: center;
+    }
+    #menu div {
+        padding-left: 0%;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .subtitulo, h3 {
+        font-size: 28px;
+    }
+    .texto {
+        font-size: 15px;
+    }
+    .text{
+        width: 240px;
+        height: 20px;
+    }
+    .textarea {
+        width: 240px;
+        height: 80px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    #top{
+        height: 12rem;
+    }
+    .formulario{
+        margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #botão_nav, #menu div{
+        display: block;
+    }
+    #botão_nav{
+        background-color: transparent;
+        width: 3rem;
+        height: 2.5rem;
+        border: .1rem solid rgba(0,0,0,.2);
+        border-radius: .4rem;
+    }
+    #botão_nav div {
+        background-color: white;
+        height: .3rem;
+        border-radius: .4rem;
+    }
+    #botão_nav div + div {
+        margin-top: .3rem;
+    }
+    #menu nav a{
+        display: none;
+    }
+    
+    .perfil{
+        width: 20%;
+    }
+    .perfil2{
+        width: 36%;
+        margin-left: 11%;
+        margin-top: -16%;
+    }
+    .coluna2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .contato {
+        padding: 0%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #menu div {
+        padding-left: 0%;
+    }
+    h1{
+        margin-top: 1%;
+        font-size: 35px;
+    }
+    .subtitulo, h3 {
+        font-size: 28px;
+    }
+    .texto {
+        font-size: 15px;
+    }
+    .text{
+        width: 240px;
+        height: 20px;
+    }
+    .textarea {
+        width: 240px;
+        height: 80px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    #top{
+        height: 11rem;
+    }
+    .formulario{
+        margin-top: 12%;
+    }
+    .perfil_1 {
+        margin-left: -27%;
+        margin-bottom: -2%;
+    }
+    .perfil_2{
+        margin-bottom: -2%;
+    }
+    .formaçao, .experiencia, .projetos {
+        padding-left: 5%;
+        padding-bottom: 9%;
+    }
+    .grado {
+        font-size: 14px;
+    }
+    .anos, .univer {
+        font-size: 11px;
+    }
+
+    .contato_logos{
+        width: 78%;
+    }
+    p{
+        font-size: 85%;
+    }
+    .logo {
+        width: 7%;
+    }
+}
+
+
