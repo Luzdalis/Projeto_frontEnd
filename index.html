@@ -48,8 +48,8 @@
        <h3 class="coluna2">Olá Pessoa!</h3>
        <p class="texto coluna2">
            Tudo bem com você e sua familia?
-           Bom! Eu sou Luzdalis López, e gosto muito da tecnología 
-           especificamente a área de Designer Web. Sou venezuelana
+           Bom! Eu sou Luzdalis López, imigrante venezuelana e gosto muito da tecnología 
+           especificamente a área de Designer Web.
            com conhecimentos na área, já que me formei como
            licenciada na computação, as ferramentas que utilizei na 
            minha formacão professional atualmente estão em desuso,
@@ -61,7 +61,12 @@
 
 <section id="formaçao" class="formaçao">
     <h2>Formação</h2>
-    <div>
+    <div class="tempo_actividade">
+        <p class="anos">Turma 8 - 2021</p>
+        <p class="grado">programação Web Full-Stack</p>
+        <p class="univer">TOTI DIGITAL - Estudando atualmente</p>
+    </div>
+    <div class="tempo_actividade">
         <p class="anos">2000-2007</p>
         <p class="grado">Licenciatura em computação</p>
         <p class="univer">Universidade de Zulia (Nucleo LUZ) Venezuela</p>
@@ -116,18 +121,24 @@
                 <p class="texto_contato">Você tambem pode me encontrar nas seguintes redes sociais:</p>
             </div>
             <div class="logos_baixos">
-                <a href="https://www.facebook.com/luzdalis/" target="_blank" rel="noopener noreferrer"><img class="logo_contato" src="img/facebook.jpg" alt="logo facebook" width="256"></a>
-                <a href="https://www.instagram.com/luzdalis_d_romero/" target="_blank" rel="noopener noreferrer"><img class="logo_contato" src="img/instagram.jpg" alt="logo instagram" width="256"></a>
-                <a href="https://twitter.com/lalilromero" target="_blank" rel="noopener noreferrer"><img class="logo_contato" src="img/twitter.jpg" alt="logo twitter" width="256"></a>
+                <a href="https://www.facebook.com/luzdalis/" target="_blank" 
+                    rel="noopener noreferrer"><img class="logo_contato" src="img/facebook.jpg"
+                    alt="logo facebook" width="256"></a>
+                <a href="https://www.instagram.com/luzdalis_d_romero/" target="_blank" 
+                    rel="noopener noreferrer"><img class="logo_contato" src="img/instagram.jpg"
+                    alt="logo instagram" width="256"></a>
+                <a href="https://twitter.com/lalilromero" target="_blank" 
+                    rel="noopener noreferrer"><img class="logo_contato" src="img/twitter.jpg"
+                    alt="logo twitter" width="256"></a>
             </div>
         </div>
         <div class="formulario">
-            <form action="" method="get">
-                <div class="label"><div><label>Nombre:</div><input class="text" type="text" name="nombre" ></label></div> 
-                <div class="label"><div><label>E-mail:</div></label><input class="text" name="email" type="email"></div> 
-                <div class="label"><div><label>Assunto:</div></label><input class="text" name="assunto" type="text"></div>  
-                <div class="label "><div><label>Mensagem:</div></label><input class="textarea" name="mensagem" type="textarea"></div>                
-                <div class="center"><input type="submit" value="ENVIAR"></div>
+            <form id="formulario">
+                <div class="label"><div><label>Nombre:</div><input class="text" type="text" name="nome" placeholder="Daniel Santos" required></label></div> 
+                <div class="label"><div><label>E-mail:</div></label><input class="text campo_invalido" name="email" type="email" placeholder="SeuEmail@gmail.com" required></div> 
+                <div class="label"><div><label>Assunto:</div></label><input class="text" name="assunto" type="text" required></div>  
+                <div class="label "><div><label>Mensagem:</div></label><textarea class="textarea" name="mensagem" type="text" required></textarea></div>                
+                <div class="center"><input type="submit" value="ENVIAR" disabled></div>
             </form>
         </div>
 </section> 
@@ -136,5 +147,6 @@
 <footer>
         <p> Luzdalis Lopez 2021&copy;Reservado todos os direitos</p>
 </footer>
+<script src="scripts.js"></script>
 </body>
 </html>
