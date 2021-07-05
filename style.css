@@ -4,9 +4,8 @@
 
 :root{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100%;
+    font-size: 80.5%;
 }
-
 
 body{ 
     margin: 0%;
@@ -29,21 +28,24 @@ body{
 #menu div{
     color: white;
     align-self: center;
-    padding: 1px;
     padding-left: 15%;
 }
 
 #menu a:hover{
     text-decoration:none;
-    background: rgb(74, 150, 87);
-    border-radius: 0.2em;   
+    background: rgb(182, 240, 192);
+    border-radius: 0.5rem; 
+    color: black;  
 }
 
 #menu nav a{
+    font-size: 1.15rem;
     display: inline-block;
     color: white;
-    padding: 0.2em 1em;
+    padding: 0.2rem 1rem;
     text-decoration: none;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 .perfil_pequeno{
@@ -51,114 +53,125 @@ body{
 }
 
 .perfil{
-    width: 5%;
-    border-radius: 10em;
-    margin: 5px;
-    border: 1px solid;
-}
-
-.logo{
-    width: 3%;
-    border-radius: 10em;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 10rem;
+    margin: 0.3rem;
+    border: 0.06rem solid;
 }
 
 h1{
-    font-size: 55px;
-    height: 5%;
-    margin-block: 0px;
-    margin-top: -6%;
+    font-size: 3.43rem;
+    margin-block: 0rem;
 }
 
 .subtitulo{
-    font-size: 34px;
+    font-size: 2.12rem;
     font-weight: 100;
 }
 
 h3{
-    font-size: 34px;
+    font-size: 2.12rem;
     font-weight: 700;
 }
 
 .texto{
-    font-size: 21px;
+    font-size: 1.31rem;
     font-weight: 500;
-    margin-block: 0px;
+    margin-block: 0rem;
     padding-bottom: 4%;
+}
+
+.link{
+    margin: .3rem;
 }
 
 .primeira{
     background-color: #0acd66;
+    display: flex;
+}
+
+.coluna1{
+    margin-top: -1.75rem;
 }
 
 .coluna2{
-    padding-left: 39%;
-    padding-right: 29%;
+    padding: 0.5rem 10rem 3rem 3rem;
 }
 
 .perfil2 {
-    border-radius: 11em;
-    width: 17%;
+    margin-top: -9.06rem;
+    margin-left: 13.31rem;
+    width: 18.25rem;
+    height: 18.25rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0rem 0.18rem 0.37rem #00000029;
+    opacity: 1;
+    border-radius: 11rem;
     border: inset;
-    margin-left: 19%;
-    margin-top: -7%;
 }
 
-.perfil_1{
-    margin-left: -13%;
-    margin-right: 2%;  
-    margin-bottom: -1%;
+.logo{
+    width: 3.12rem;
+    height: 3.12rem;   
+    border: 0.06rem solid #ffffff;
+    border-radius: 10rem;
 }
 
-.perfil_2{
-    margin-bottom: -1%;
+.margin_logoGit{
+    margin-left: 16.43rem;
+}
+
+.icone{
+    margin: 3rem 1rem 1.5rem 1rem;
 }
 
 h2{
-    font-size: 55px;
+    font-size: 3.43rem;
     font-weight: lighter;
-    margin-block: 0px;
+    margin-block: 0rem;
     padding-top: 4%;
     padding-bottom: 3%;
 
 }
 
 .formaçao{
-    padding-left: 22%;
     background-color: rgb(76 148 255);
     padding-bottom: 5%;
 }
 
 .experiencia{
-    padding-left: 22%;
     background-color: #7af6d6;
     padding-bottom: 5%;
 }
 
 .projetos{
-    padding-left: 22%;
     background-color: rgb(76 148 255);
     padding-bottom: 5%  
 }
 
 .contato{
-    padding-left: 22%;
     background-color: #7af6d6;
     padding-bottom: 5%;
     display: flex;    
 }
 
+.margin_section{
+    padding-left: 22%;
+}
+
 .boton{
     text-decoration: none;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0.18rem;
+    padding-left: 0.62rem;
+    padding-right: 0.62rem;
     font-family: helvetica;
     font-weight: 300;
     font-style: normal;
     color: white;
     background-color: black;
-    border-radius: 15px;
-    border: 3px double #006505;
+    border-radius: 0.93rem;
+    border: 0.18rem double #006505;
     margin-left: 4%;
   }
 
@@ -174,15 +187,15 @@ h2{
   }
 
 .anos, .univer{
-    font-size: 13px; 
+    font-size: 0.81rem; 
     font-weight: 700;
-    margin-block: 0px;
+    margin-block: 0rem;
 }
 
 .grado{
-    font-size: 21px;
+    font-size: 1.31rem;
     font-weight: 900;
-    margin-block: 0px;
+    margin-block: 0rem;
 }
 
 .univer{
@@ -191,30 +204,30 @@ h2{
 
 .nome_projeto{
     margin-left: 4%;
-    font-size: 21px;
-    margin-block: 0px;
+    font-size: 1.31rem;
+    margin-block: 0rem;
 }
 
 .texto_projeto{
-    font-size: 13px;
+    font-size: 0.81rem;
     margin: 4% 4% 12%;
 }
 
 .projeto1{
-    top: 1773px;
-    left: 554px;
-    width: 260px;
-    height: 335px;
+    top: 110.813rem;
+    left: 34.62rem;
+    width: 16.25rem;
+    height: 20.93rem;
     background: #76efc7 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 5px;
+    box-shadow: 0rem 0.18rem 0.37rem #00000029;
+    border-radius: 0.31rem;
     opacity: 1;
 }
 
 .portal{
     width: 91%;
     margin: 4%;
-    border: 1px solid #707070;
+    border: 0.06rem solid #707070;
     opacity: 1;
 }
 
@@ -227,28 +240,22 @@ h2{
     padding-left: 3%;
 }
 
-.label{
-    margin-bottom: 3%;
+.label, .margin_top{
+    margin-top: 3%;
 }
 
 .text{
-    width: 398px;
-    height: 34px;
+    width: 24.87rem;
+    height: 2.12rem;
 }
 
 .textarea{
-    width: 398px;
-    height: 133px;
-}
-
-.logo_contato {
-    margin: 3%;
-    width: 13%;
-    border-radius: 2em;
+    width: 24.87rem;
+    height: 8.31rem;
 }
 
 .texto_contato{
-    font-size: 21px;
+    font-size: 1.31rem;
     margin-top: 6%;
 }
 
@@ -256,237 +263,144 @@ footer{
     background-color: #0a1462;
     text-align: center;
     color: white;
-    margin-block: 0px;
+    margin-block: 0rem;
     padding: 1%;
 }
 
 p{
-    margin-block: 0px;
-}
-
-.center{
-    text-align: center;
-}
-
-.logos_baixos{
-    margin-top: 18%;
+    margin-block: 0rem;
 }
 
 .tempo_actividade{
     margin: 3% 0%;
 }
 
-@media screen and (max-width: 1200px) {
-    .perfil2{
-        margin-left: 15%;
-    }
-    .coluna2 { 
-        padding-left: 34%;
-        padding-right: 18%;
-    }
-}
+@media screen and (min-width: 1190px ){
+    :root{
+        font-size: 100%;
+    }   
+}  
 
-@media screen and (max-width: 900px) {
-    .perfil2{
-        margin-left: 11%;
-    }
-    .coluna2 { 
-        padding-left: 30%;
-        padding-right: 16%;
-    }
-    .contato {
-        padding: 0%;
-        justify-content: center;
-    }
-    #menu div {
-        padding-left: 8%;
-    }
-    .texto_contato{
-        font-size: 16px
-    }
-    .text {
-        width: 300px;
-        height: 20px;
-    }
-    .textarea {
-        width: 300px;
-        height: 80px;
-    }
-    .logos_baixos {
-        margin-top: 7%;
-    }
-    .center {
-        margin-bottom: 13%;
-    }
-}
+@media screen and (min-width: 1022px ) and (max-width: 1189px ){
+    :root{
+        font-size: 90.5%;
+    }   
+} 
 
-
-/* Adaptação para TABLET */ 
-@media screen and (min-width: 500px) and (max-width: 700px) {
-    #botão_nav, #menu div{
-        display: block;
-    }
-    #botão_nav{
-        background-color: transparent;
-        width: 3rem;
-        height: 2.5rem;
-        border: .1rem solid rgba(0,0,0,.2);
-        border-radius: .4rem;
-    }
-    #botão_nav div {
-        background-color: white;
-        height: .3rem;
-        border-radius: .4rem;
-    }
-    #botão_nav div + div {
-        margin-top: .3rem;
-    }
-    #menu nav a{
-        display: none;
-    }
-    
-    .perfil{
-        width: 13%;
+@media screen and (min-width: 760px ) and (max-width: 1021px ){
+    .margin_logoGit {
+        margin-left: 7.43rem;
     }
     .perfil2{
-        margin-left: 11%;
-    }
-    .coluna2 { 
-        padding-left: 30%;
-        padding-right: 16%;
-    }
-    .contato {
-        padding: 0%;
-        justify-content: center;
-    }
-    #menu div {
-        padding-left: 0%;
-    }
-    h1{
-        font-size: 35px;
-    }
-    .subtitulo, h3 {
-        font-size: 28px;
-    }
-    .texto {
-        font-size: 15px;
-    }
-    .text{
-        width: 240px;
-        height: 20px;
-    }
-    .textarea {
-        width: 240px;
-        height: 80px;
-    }
-    h2 {
-        font-size: 45px;
-    }
-    #top{
-        height: 12rem;
-    }
-    .formulario{
-        margin-top: 12%;
-    }
-}
-
-@media screen and (max-width: 499px) {
-    #botão_nav, #menu div{
-        display: block;
-    }
-    #botão_nav{
-        background-color: transparent;
-        width: 3rem;
-        height: 2.5rem;
-        border: .1rem solid rgba(0,0,0,.2);
-        border-radius: .4rem;
-    }
-    #botão_nav div {
-        background-color: white;
-        height: .3rem;
-        border-radius: .4rem;
-    }
-    #botão_nav div + div {
-        margin-top: .3rem;
-    }
-    #menu nav a{
-        display: none;
-    }
-    
-    .perfil{
-        width: 20%;
-    }
-    .perfil2{
-        width: 36%;
-        margin-left: 11%;
-        margin-top: -16%;
+        margin-left: 4.31rem;
     }
     .coluna2 {
+        padding: 0.5rem 2rem 3rem 2rem;
+    }
+} 
+
+@media screen and (min-width: 637px ) and (max-width: 759px ){
+    .margin_logoGit {
+        margin-left: 5.43rem;
+    }
+    .perfil2{
+        margin-left: 2.31rem;
+    }
+    .coluna2 {
+        padding: 0.5rem 2rem 3rem 2rem;
+    }
+    .margin_section {
         padding-left: 5%;
-        padding-right: 5%;
     }
-    .contato {
-        padding: 0%;
-        justify-content: center;
-        flex-wrap: wrap;
+    #botão_nav, #menu div{
+        display: block;
     }
-    #menu div {
+    #menu div{
         padding-left: 0%;
     }
-    h1{
-        margin-top: 1%;
-        font-size: 35px;
+    #botão_nav{
+        background-color: transparent;
+        width: 4rem;
+        height: 3.5rem;
+        border: .1rem solid rgba(0,0,0,.2);
+        border-radius: .4rem;
     }
-    .subtitulo, h3 {
-        font-size: 28px;
+    #botão_nav div {
+        background-color: white;
+        height: .4rem;
+        border-radius: .4rem;
     }
-    .texto {
-        font-size: 15px;
+    #botão_nav div + div {
+        margin-top: .3rem;
     }
-    .text{
-        width: 240px;
-        height: 20px;
+    #menu nav a{
+        display: none;
     }
-    .textarea {
-        width: 240px;
-        height: 80px;
-    }
-    h2 {
-        font-size: 45px;
-    }
-    #top{
-        height: 11rem;
-    }
-    .formulario{
-        margin-top: 12%;
-    }
-    .perfil_1 {
-        margin-left: -27%;
-        margin-bottom: -2%;
-    }
-    .perfil_2{
-        margin-bottom: -2%;
-    }
-    .formaçao, .experiencia, .projetos {
-        padding-left: 5%;
-        padding-bottom: 9%;
-    }
-    .grado {
-        font-size: 14px;
-    }
-    .anos, .univer {
-        font-size: 11px;
-    }
-
-    .contato_logos{
-        width: 78%;
-    }
-    p{
-        font-size: 85%;
-    }
-    .logo {
-        width: 7%;
+    #menu{
+        justify-content: space-between;
+        padding: 0rem 2.5rem;
     }
 }
 
+@media screen and (max-width: 636px ){
+    :root{
+        font-size: 76.5%;
+    }
+    .center{
+        text-align: center;
+    }
+    .margin_logoGit {
+        margin-left: 0rem;
+    }
+    .perfil2{
+        margin-left: 0rem;
+    }
+    .coluna2 {
+        padding: 0.5rem 1rem 3rem 1rem;
+    }
+    .margin_section {
+        padding: 0rem 0.5rem 3rem .5rem;
+    }
+    .primeira{
+        display: block;
+    }
+    .contato{
+        display: block;
+    }
+    .contato_logos{
+        width: auto;
+    }
+    .formulario{
+        text-align: center;
+        padding-left: 0rem;
+    }
+    #botão_nav, #menu div{
+        display: block;
+    }
+    #menu div{
+        padding-left: 0%;
+    }
+    #botão_nav{
+        background-color: transparent;
+        width: 4rem;
+        height: 3.5rem;
+        border: .1rem solid rgba(0,0,0,.2);
+        border-radius: .4rem;
+    }
+    #botão_nav div {
+        background-color: white;
+        height: .4rem;
+        border-radius: .4rem;
+    }
+    #botão_nav div + div{
+        margin-top: .3rem;
+    }
+    #menu nav a{
+        display: none;
+    }
+    #menu{
+        justify-content: space-between;
+        padding: 0rem 2.5rem;
+    }
 
+}

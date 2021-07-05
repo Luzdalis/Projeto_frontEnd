@@ -12,7 +12,7 @@
 
 <header>
    <section id="menu">   
-      <div class="perfil_pequeno"><img  class="perfil" src="img/luz.jpg" alt="foto minha" width="400"></div>
+      <div class="perfil_pequeno"><img  class="perfil" src="img/luz.jpg" alt="foto minha" width="260"></div>
       <div>
         <nav>
             <a href="#menu">Apresentação</a>
@@ -37,16 +37,22 @@
 
 <section class="primeira">
 
-    <div class="coluna1">
-            <img class="perfil2" src="img/luz.jpg" alt="foto minha" width="400">
-            <a href="https://github.com/Luzdalis" target="_blank" rel="noopener noreferrer"><img class="logo perfil_1" src="img/github-logo.jpg" alt="logo GitHub" width="256"></a>
-            <a href="https://www.linkedin.com/in/luzdalis-lopez-4106a9207/" target="_blank" rel="noopener noreferrer"><img class="logo perfil_2" src="img/linkedin.jpg" alt="logo Linkedin" width="256"></a>
+    <div class="center">
+        <img class="perfil2" src="img/luz.jpg" alt="foto minha" width="260">
+        <div class="coluna1">
+            <a class="link" href="https://github.com/Luzdalis" target="_blank" rel="noopener noreferrer">
+                <img class="logo margin_logoGit" src="img/github-logo.jpg" alt="logo GitHub" width="256"></a>
+            <a class="link" href="https://www.linkedin.com/in/luzdalis-lopez-4106a9207/" target="_blank" rel="noopener noreferrer">
+                <img class="logo" src="img/linkedin.jpg" alt="logo Linkedin" width="256"></a>
+            <a class="link" href="https://www.facebook.com/luzdalis/" target="_blank" rel="noopener noreferrer">
+                <img class="logo" src="img/facebook.jpg" alt="logo facebook" width="256"></a>
+        </div>
     </div>
-
-       <h1 class="coluna2">Luzdalis Lopez</h1>
-       <p class="subtitulo coluna2"><em> Full-Stack Developer </em></p>
-       <h3 class="coluna2">Olá Pessoa!</h3>
-       <p class="texto coluna2">
+    <div class="coluna2">
+       <h1>Luzdalis Lopez</h1>
+       <p class="subtitulo"><em> Full-Stack Developer </em></p>
+       <h3>Olá Pessoa!</h3>
+       <p class="texto">
            Tudo bem com você e sua familia?
            Bom! Eu sou Luzdalis López, imigrante venezuelana e gosto muito da tecnología 
            especificamente a área de Designer Web.
@@ -57,9 +63,10 @@
            web com programação Full Stack na TOTI, para me atualiçar 
            nas novas ferramentas que são vanguarda no mercado laboral.
        </p>
+    </div>
 </section>
 
-<section id="formaçao" class="formaçao">
+<section id="formaçao" class="formaçao margin_section">
     <h2>Formação</h2>
     <div class="tempo_actividade">
         <p class="anos">Turma 8 - 2021</p>
@@ -73,7 +80,7 @@
     </div>
 </section>
 
-<section id="experiencia" class="experiencia">
+<section id="experiencia" class="experiencia margin_section">
     <h2>Experiência</h2>
     <div>
         <div class="tempo_actividade">
@@ -99,7 +106,7 @@
     </div>
 </section>
 
-<section id="projetos" class="projetos">
+<section id="projetos" class="projetos margin_section">
         <h2>Projetos</h2>
         <div class="projeto1">
             <img class="portal" src="img/portal.jpg" alt="">
@@ -111,7 +118,7 @@
         </div>
 </section>
 
-<section id="contato" class="contato">
+<section id="contato" class="contato margin_section">
 
         <div class="contato_logos">
             <div>
@@ -120,25 +127,32 @@
                 <p class="texto_contato">Prencha o formulario ao lado e entrarei em contato o mais rápido possivel.</p>
                 <p class="texto_contato">Você tambem pode me encontrar nas seguintes redes sociais:</p>
             </div>
-            <div class="logos_baixos">
-                <a href="https://www.facebook.com/luzdalis/" target="_blank" 
-                    rel="noopener noreferrer"><img class="logo_contato" src="img/facebook.jpg"
-                    alt="logo facebook" width="256"></a>
+            <div>
                 <a href="https://www.instagram.com/luzdalis_d_romero/" target="_blank" 
-                    rel="noopener noreferrer"><img class="logo_contato" src="img/instagram.jpg"
+                    rel="noopener noreferrer"><img class="logo icone" src="img/instagram.jpg"
                     alt="logo instagram" width="256"></a>
                 <a href="https://twitter.com/lalilromero" target="_blank" 
-                    rel="noopener noreferrer"><img class="logo_contato" src="img/twitter.jpg"
+                    rel="noopener noreferrer"><img class="logo icone" src="img/twitter.jpg"
                     alt="logo twitter" width="256"></a>
+                <a href="https://api.whatsapp.com/send?phone= +55 11 95168 8775" target="_blank" 
+                    rel="noopener noreferrer"><img class="logo icone" src="img/whatsap.jpg"
+                    alt="logo whatsap" width="256"></a>
             </div>
         </div>
         <div class="formulario">
             <form id="formulario">
-                <div class="label"><div><label>Nombre:</div><input class="text" type="text" name="nome" placeholder="Daniel Santos" required></label></div> 
-                <div class="label"><div><label>E-mail:</div></label><input class="text campo_invalido" name="email" type="email" placeholder="SeuEmail@gmail.com" required></div> 
-                <div class="label"><div><label>Assunto:</div></label><input class="text" name="assunto" type="text" required></div>  
-                <div class="label "><div><label>Mensagem:</div></label><textarea class="textarea" name="mensagem" type="text" required></textarea></div>                
-                <div class="center"><input type="submit" value="ENVIAR" disabled></div>
+                <div class="label"><div><label>Nombre:</label></div>
+                    <input class="text" type="text" name="nome" 
+                    placeholder="Daniel Santos" required></div> 
+                <div class="label"><div><label>E-mail:</label></div>
+                    <input class="text" name="email" type="email" 
+                    placeholder="SeuEmail@gmail.com" required></div>
+                <p id="msgemail"></p>
+                <div class="label"><div><label>Assunto:</label></div>
+                    <input class="text" name="assunto" type="text" required></div>  
+                <div class="label"><div><label>Mensagem:</label></div>
+                    <textarea class="textarea" name="mensagem" type="text" required></textarea></div>                
+                <div class="center"><input type="submit" value="ENVIAR" ></div>
             </form>
         </div>
 </section> 

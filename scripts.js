@@ -5,35 +5,38 @@ let campoEmail = form.querySelector('[name="email"]');
 let campoAssunto = form.querySelector('[name="assunto"]');
 let campoMensagem = form.querySelector('[name="mensagem"]');
 
-let dadosValidos = { 
-    emailValido: validarEmail(campoEmail.value)
-}
-
-function validarEmail(email) {
-    let re = /\S+@\S+\.\S+/;
-    return re.test(email);
-}
-
-campoEmail.addEventListener("imput", function(){
-    if (validarEmail(campoEmail.value)){
-        campoEmail.classList.remove("campo_invalido");
-        dadosValidos.emailValido = true;
-    } else {
-        campoEmail.classList.add("campo_invalido");
-        dadosValidos.emailValido = false;
+function validacaoEmail(campoEmail) {
+    usuario = campoEmail.value.substring(0, campoEmail.value.indexOf("@"));
+    dominio = campoEmail.value.substring(campoEmail.value.indexOf("@")+ 1, campoEmail.value.length);
+    if ((usuario.length >=1) &&
+        (dominio.length >=3) &&
+        (usuario.search("@")==-1) &&
+        (dominio.search("@")==-1) &&
+        (usuario.search(" ")==-1) &&
+        (dominio.search(" ")==-1) &&
+        (dominio.search(".")!=-1) &&
+        (dominio.indexOf(".") >=1)&&
+        (dominio.lastIndexOf(".") < dominio.length - 1)) {
+    document.getElementById("msgemail").innerHTML="<font color='blue' size='2px' >Email Valido </font>";
+    return true;
     }
-})
+    else{
+        document.querySelector('#msgemail').innerHTML= "<font color='red' size='2px' >Email inválido </font>";
+        alert ("Verifique o E-mail inserido e tente novamente!")
+        return false;
+    }
+}
 
 form.addEventListener("submit", function (evento) {
     evento.preventDefault()
 
     let dados = new FormData(form);
 
-    let novoCadastro = cadastro_de_pessoas(dados);
-    
-    pessoas.push(novoCadastro);
-    alert("Pessoa registrada!")
-
+    if (validacaoEmail(campoEmail) == true){
+        let novoCadastro = cadastro_de_pessoas(dados);
+        pessoas.push(novoCadastro);
+        alert("Dados enviados!")
+    }
 })
 
 function cadastro_de_pessoas(formData) {
